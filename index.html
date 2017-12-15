@@ -4,10 +4,14 @@
     <meta charset="UTF-8">
     <title>Ridicilizir</title>
     <link rel="shortcut icon" href="catto.png" />
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@1/dist/clipboard.min.js"></script>
+
 </head>
 <body>
 
 <script>
+    var copy = new Clipboard('.btn');
+
     function ridiculize() {
         var text = document.getElementById("text").value;
         text = text.replace(/[aeou]/g, "i");
@@ -17,8 +21,10 @@
         document.getElementById("ridiculous").innerHTML = text;
     }
 </script>
-    <textarea id="text" cols="120" rows="10" placeholder="Paste here the text you want to ridiculize!" ></textarea><br>
-    <input type="submit" value="Ridiculize me!" onclick="ridiculize()">
-    <h4 id="ridiculous"></h4>
+
+<textarea id="text" cols="120" rows="10" placeholder="Paste here the text you want to ridiculize!" ></textarea><br>
+<button class="btn" data-clipboard-target="#ridiculous" onclick="ridiculize()"> Ridiculize me!</button>
+<h4 id="ridiculous"></h4>
+
 </body>
 </html>
