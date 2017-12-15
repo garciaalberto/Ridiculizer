@@ -16,8 +16,14 @@
         var text = document.getElementById("text").value;
         text = text.replace(/[aeou]/g, "i");
         text = text.replace(/[áéóú]/g, "í");
+        text = text.replace(/[àèòù]/g, "ì");
+        text = text.replace(/[äëöü]/g, "ì");
         text = text.replace(/[AEOU]/g, "I");
         text = text.replace(/[ÁÉÓÚ]/g, "Í");
+        text = text.replace(/[ÀÈÒÙ]/g, "Ì");
+        text = text.replace(/[ÄËÖÜ]/g, "Ï");
+        
+        
         document.getElementById("ridiculous").innerHTML = text;
     }
 </script>
