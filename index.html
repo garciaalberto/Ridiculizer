@@ -3,19 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <title>Ridicilizir</title>
+    <link rel="shortcut icon" href="catto.png" />
 </head>
 <body>
+
 <script>
     function ridiculize() {
         var text = document.getElementById("text").value;
         text = text.replace(/[aeou]/g, "i");
-        text = text.replace(/[·ÈÛ˙]/g, "Ì");
+        text = text.replace(/[√°√©√≥√∫]/g, "√≠");
         text = text.replace(/[AEOU]/g, "I");
-        text = text.replace(/[¡…”⁄]/g, "Õ");
+        text = text.replace(/[√Å√â√ì√ö]/g, "√ç");
         document.getElementById("ridiculous").innerHTML = text;
     }
 </script>
-    <textarea id="text" cols="120" rows="10" placeholder="Paste here the text you want to ridiculize!"></textarea><br>
+    <textarea id="text" cols="120" rows="10" placeholder="Paste here the text you want to ridiculize!" ></textarea><br>
     <input type="submit" value="Ridiculize me!" onclick="ridiculize()">
     <h4 id="ridiculous"></h4>
 </body>
