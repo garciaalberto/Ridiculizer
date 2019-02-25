@@ -1,4 +1,4 @@
 # Ridiculizer
 This is i ripisitiry
 
-[Tist mi hiri](https://rawgit.com/garciaalberto/Ridiculizer/master/index.html)
+[Tist mi hiri](https://raw.githack.com/garciaalberto/Ridiculizer/master/index.html)
